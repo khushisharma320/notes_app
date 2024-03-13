@@ -1,5 +1,5 @@
 
-import MenuBookIcon from '@mui/icons-material/MenuBook';
+import { MdOutlineMenuBook } from "react-icons/md";
 
 
 
@@ -9,7 +9,7 @@ export default function Header(props) {
         <>
             <nav>
                 <div className="container-fluid d-flex justify-content-between hello">
-                    <span style={{ color: "white", fontSize: "20px" }}><span style={{ color: "yellow" }}><MenuBookIcon /> </span>{props.heading}</span>
+                    <span style={{ color: "white", fontSize: "20px" }}><span style={{ color: "yellow" }}><MdOutlineMenuBook/> </span>{props.heading}</span>
 
                 </div>
             </nav>

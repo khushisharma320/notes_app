@@ -1,10 +1,9 @@
-import React, { useEffect, useState } from 'react';
-import AddIcon from '@mui/icons-material/Add';
+import React, { useState } from 'react';
 import { Button, TextField, Alert } from '@mui/material';
 import Header from './Header';
 import Footer from './Footer';
-import EditIcon from '@mui/icons-material/Edit';
-import DeleteIcon from '@mui/icons-material/Delete';
+import { MdDelete, MdLibraryAdd } from 'react-icons/md';
+
 
 
 
@@ -67,7 +66,7 @@ export default function ToDo() {
             <h3>ToDo List</h3>
             <div>
               <TextField id="standard-basic" label="Type Here......." variant="standard" value={value} onChange={inputChange} onKeyPress={keyPress} />
-              <Button variant="contained" onClick={addValue}><AddIcon /></Button>
+              <Button variant="contained" onClick={addValue}><MdLibraryAdd /></Button>
             </div>
 
             {
@@ -77,7 +76,7 @@ export default function ToDo() {
                     <div className='listItems' key={index}>
                       <span style={{ color: "green" }}>{index + 1}</span>
                       <span style={{ overflow: "hidden" }}>{element}</span>
-                      <span style={{ color: "red" }} onClick={() => deleteValue(index)}><DeleteIcon /></span>
+                      <span style={{ color: "red" }} onClick={() => deleteValue(index)}><MdDelete /></span>
                     </div>
 
                   </>

@@ -1,5 +1,4 @@
-import { Button } from "@mui/material";
-import DeleteIcon from '@mui/icons-material/Delete';
+import { MdDelete } from "react-icons/md";
 
 export default function Note(props) {
 
@@ -12,7 +11,7 @@ export default function Note(props) {
             <div className="noteContainer">
                 <h6 style={{ color: "blue" }}>{props.title}</h6>
                 <p style={{ color: "purple" }}>{props.content}</p>
-                <span onClick={DeleteItem} style={{ color: "red" }}><DeleteIcon /></span>
+                <span onClick={DeleteItem} style={{ color: "red" }}><MdDelete /></span>
             </div>
 
 

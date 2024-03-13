@@ -1,38 +1,168 @@
-.App {
+body {
+  background-color: #002147;
+  color: white;
+  height: 100vh;
+}
+
+nav,
+footer {
+  background-color: #002147;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+nav {
+  top: 0;
+  height: 50px;
+  text-align: left;
+  box-shadow: 0 10px 20px -5px rgba(0, 0, 0, 0.45);
+  z-index: 1;
+}
+
+footer {
+  bottom: 0;
+  height: 50px;
+  text-align: center;
+  box-shadow: 0 -10px 20px -5px rgba(0, 0, 0, 0.45);
+
+
+}
+
+.heading,
+.para {
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.heading {
+  margin-top: 100px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.para {
+  margin-top: 40px;
+  line-height: 5.5px;
+  color: rgb(48, 48, 242);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.cards {
   display: flex;
-  flex-direction: column;
+  justify-content: space-around;
+  text-align: center;
   align-items: center;
+  flex-wrap: wrap;
+  margin-top: 150px;
+}
+
+.indiCards {
+  width: 300px;
+  height: 150px;
+  margin-top: 20px;
+  padding-top: 25px;
+  margin-bottom: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  color: blue;
+}
+
+
+.indiCards:hover {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+
+}
+
+.icon {
+  color: yellow;
+  margin-bottom: 20px;
+}
+
+.todoMain {
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 150px;
 }
 
-.App-link {
-  color: #61dafb;
+.todoContainer {
+  height: 420px;
+  width: 350px;
+  text-align: center;
+  padding: 20px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  overflow: auto;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+.listItems {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+
+.noteCardMain form{
+  text-align: center;
+  margin-top: 77px;
+}
+
+.noteCardMain Button{
+  margin-top: 35px;
+  width: 185px;
+}
+
+.writeNote{
+  width: 450px;
+  top: 15px;
+}
+
+.noteMain{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 45px;
+  justify-content: center;
+  height: 340px;
+  overflow: auto;
+}
+
+.noteContainer{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.45), 0 6px 20px 0 rgba(0, 0, 0, 0.35);
+  width: 253px;
+  height: 137px;
+  overflow: auto;
+  margin: 0px,20px,20px,0px;
+  margin-bottom: 10px;
+  padding: 9px;
+}
+
+@media screen and (max-width: 576px) {
+  .cards {
+    margin-top: 70px;
   }
-  to {
-    transform: rotate(360deg);
+
+  .para {
+    line-height: 15px;
+    font-size: 12px;
+    margin-top: 20px;
+  }
+
+  .heading {
+    margin-top: 70px;
+  }
+
+  .todoContainer{
+    width: 260px;
+  }
+
+  .todoMain{
+    margin-top: 100px;
+  }
+
+  .writeNote{
+    width: 200px; 
+  }
+
+  .noteCardMain Button{
+    width: 100px;
+  }
+  
+  .noteMain{
+    margin: 45px,45px,100px, 45px;
   }
 }
+

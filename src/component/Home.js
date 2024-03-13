@@ -1,7 +1,6 @@
 import Cards from "./Cards";
-
-import TextSnippetIcon from '@mui/icons-material/TextSnippet';
-import ListAltIcon from '@mui/icons-material/ListAlt';
+import { MdTextSnippet } from "react-icons/md";
+import { FaListAlt } from "react-icons/fa";
 
 const Home = () => {
     return (
@@ -14,8 +13,8 @@ const Home = () => {
                 <p>Everything syncs across your devices, so what's important is always within reach.</p>
             </div>
             <div className="cards">
-                <Cards list="Notes List" pathName="CreateNote" icon={<TextSnippetIcon />} />
-                <Cards list="ToDo List" pathName="ToDo" icon={<ListAltIcon />} />
+                <Cards list="Notes List" pathName="CreateNote" icon={<MdTextSnippet />} />
+                <Cards list="ToDo List" pathName="ToDo" icon={<FaListAlt />} />
             </div>
         </>
     )
